@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2 align="center">Salaries</h2>
+
+        <table border="1" align="center" width="400">
+            <tr>
+                <td align="center" colspan="2">Salary Adjustment</td>
+            </tr align="center">
+            <td>Salary</td><td><p id="salary$"></p></td>
+        </table>
+        <script>
+            const salary = [1100 , 2000 , 3400 , 3500];
+
+            let i = 0;
+            let len = salary.length;
+            let text = "";
+
+
+            for (;i < len; ) {
+                text += salary[i]+100 + "<br>";
+                i++;
+            }
+
+            document.getElementById("salary$").innerHTML = text;
+            
+        </script>
+    </body>
+</html>
